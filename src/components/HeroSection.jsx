@@ -17,21 +17,21 @@ const HeroSection = () => {
       </motion.div>
 
       <motion.h1 
-        className="text-9xl font-bold mt-4 cursor-pointer"
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-        animate={{
-          backgroundImage: isHovered
-            ? "linear-gradient(90deg, #9FA9C4, #9FA9C4, #9FA9C4, #9FA9C4)"
-            : "linear-gradient(90deg, #A8B2CF, #bbbbbb)",
-          WebkitBackgroundClip: "text",
-          WebkitTextFillColor: "transparent",
-          textShadow: isHovered ? "0px 0px 15px rgba(255, 255, 255, 0.8)" : "none"
-        }}
-        transition={{ duration: 0.5 }}
-      >
-        adTask.ai
-      </motion.h1>
+            className="font-bold mt-4 cursor-pointer text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-9xl"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+            animate={{
+                backgroundImage: isHovered
+                    ? "linear-gradient(90deg, #9FA9C4, #9FA9C4, #9FA9C4, #9FA9C4)"
+                    : "linear-gradient(90deg, #A8B2CF, #bbbbbb)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                textShadow: isHovered ? "0px 0px 15px rgba(255, 255, 255, 0.8)" : "none"
+            }}
+            transition={{ duration: 0.5 }}
+        >
+            adTask.ai
+        </motion.h1>
 
       <p className="text-lg mt-4 max-w-xl">
         AdTask AI is your intelligent companion that transforms how developers code, test, and deploy.

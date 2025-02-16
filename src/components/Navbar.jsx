@@ -67,33 +67,34 @@ export default function Navbar() {
         }}
       >
         <Toolbar sx={{ justifyContent: "space-between" }}>
-          <Typography
-            variant="h4"
-            sx={{
-              color: "white",
-              fontWeight: "bold",
-              transition: "all 0.3s ease-in-out",
-              "&:hover": {
-                boxShadow: "0px 4px 10px rgba(255, 255, 255, 0.3)",
-                transform: "scale(1.05)",
-              },
-            }}
-          >
-            ad
-            <Box
-              component="span"
-              sx={{
-                color: "#D1D5DB",
-                transition: "color 0.3s ease-in-out",
-                "&:hover": {
-                  color: "#fff",
-                },
-              }}
-            >
-              Task
-            </Box>
-            .ai
-          </Typography>
+        <Typography
+  variant="h4"
+  sx={{
+    color: "white",
+    fontWeight: "bold",
+    transition: "all 0.3s ease-in-out",
+    "&:hover": {
+      boxShadow: "0px 4px 10px rgba(255, 255, 255, 0.3)",
+      transform: "scale(1.05)",
+    },
+  }}
+>
+  ad
+  <Box
+    component="span"
+    sx={{
+      color: "#D1D5DB",
+      transition: "color 0.3s ease-in-out",
+      "&:hover": {
+        color: "#fff",
+      },
+    }}
+  >
+    Task
+  </Box>
+  .ai
+</Typography>
+
 
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             {navItems.map((item) => (
