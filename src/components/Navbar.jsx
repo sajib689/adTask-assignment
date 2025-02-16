@@ -34,9 +34,9 @@ export default function Navbar() {
       onClick={handleDrawerToggle}
       sx={{ textAlign: "center", backgroundColor: "#0A0A0A", height: "100%" }}
     >
-      <Typography variant="h1" sx={{ my: 2, color: "white", fontSize: '30px' }}>
-  ad<b>Task</b>.ai
-</Typography>
+      <Typography variant="h6" sx={{ my: 2, color: "white" }}>
+        ad<b>Task</b>.ai
+      </Typography>
 
       <List>
         {navItems.map((item) => (
@@ -59,17 +59,42 @@ export default function Navbar() {
       <AppBar
         component="nav"
         sx={{
-          backgroundColor: "#050506", // Use backgroundColor instead of background
+          backgroundColor: "#050506",
           boxShadow: "none",
           mx: "auto",
           borderColor: "#555",
-              borderRadius: "24px",
+          borderRadius: "24px",
         }}
       >
         <Toolbar sx={{ justifyContent: "space-between" }}>
-          <Typography variant="h6" sx={{ color: "white", fontWeight: "bold" }}>
-            ad<span style={{ color: "#D1D5DB" }}>Task</span>.ai
+          <Typography
+            variant="h4"
+            sx={{
+              color: "white",
+              fontWeight: "bold",
+              transition: "all 0.3s ease-in-out",
+              "&:hover": {
+                boxShadow: "0px 4px 10px rgba(255, 255, 255, 0.3)",
+                transform: "scale(1.05)",
+              },
+            }}
+          >
+            ad
+            <Box
+              component="span"
+              sx={{
+                color: "#D1D5DB",
+                transition: "color 0.3s ease-in-out",
+                "&:hover": {
+                  color: "#fff",
+                },
+              }}
+            >
+              Task
+            </Box>
+            .ai
           </Typography>
+
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             {navItems.map((item) => (
               <Button
