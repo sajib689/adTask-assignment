@@ -7,21 +7,21 @@
 @keyframes borderSnake {
   0% {
       border-color: transparent;
-      border-left-color: #566999; /* Change to desired color */
+      border-left-color: #566999; 
   }
   25% {
-      border-color: #566999; /* Change to desired color */
+      border-color: #566999;
   }
   50% {
       border-color: transparent;
-      border-right-color: #566999; /* Change to desired color */
+      border-right-color: #566999; 
   }
   75% {
-      border-color: #566999; /* Change to desired color */
+      border-color: #566999;
   }
   100% {
       border-color: transparent;
-      border-bottom-color: #566999; /* Change to desired color */
+      border-bottom-color: #566999;
   }
 }
 
