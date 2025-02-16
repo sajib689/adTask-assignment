@@ -30,7 +30,7 @@
   align-items: center;
   width: 100%;
   max-width: 850px;
-  border-radius: 24px;
+  border-radius: 30px;
   background: linear-gradient(white, white) padding-box,
     conic-gradient(
         from var(--border-angle),

@@ -1,5 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import YoutubeSection from "@/components/YoutubeSection";
+import SliderSection from "@/components/SliderSection";
 
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <div>
       <HeroSection/>
       <YoutubeSection/>
+      <SliderSection/>
     </div>
   );
 }
