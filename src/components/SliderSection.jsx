@@ -26,7 +26,7 @@ const SliderSection = () => {
   };
 
   return (
-    <div className="w-full flex justify-center items-center p-4 mt-5 mb-5">
+    <div className="w-full flex justify-center items-center mt-5 mb-10">
       <Slider {...settings} className="w-full max-w-4xl flex justify-center items-center">
         {images.map((src, index) => (
           <div key={index} className="flex justify-center items-center px-2">

@@ -14,7 +14,7 @@ const icons = [
 
 const IconGrid = () => {
   return (
-    <div className="flex flex-wrap justify-center items-center gap-6 p-6 mt-6">
+    <div className="flex flex-wrap justify-center items-center gap-6 p-6 mt-10">
       {icons.map((iconItem) => (
         <Box
           key={iconItem.name}
