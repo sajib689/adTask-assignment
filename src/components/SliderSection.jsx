@@ -33,8 +33,8 @@ const SliderSection = () => {
             <Image 
               src={src} 
               alt={`Slide ${index + 1}`} 
-              width={100} 
-              height={120} 
+              width={80} 
+              height={100} 
               priority 
               className="rounded-lg"
             />
