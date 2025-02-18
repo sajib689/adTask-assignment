@@ -26,14 +26,14 @@ const SliderSection = () => {
   };
 
   return (
-    <div className="w-full flex justify-center items-center p-4">
+    <div className="w-full flex justify-center items-center p-4 mt-5 mb-5">
       <Slider {...settings} className="w-full max-w-4xl flex justify-center items-center">
         {images.map((src, index) => (
           <div key={index} className="flex justify-center items-center px-2">
             <Image 
               src={src} 
               alt={`Slide ${index + 1}`} 
-              width={120} 
+              width={100} 
               height={120} 
               priority 
               className="rounded-lg"
